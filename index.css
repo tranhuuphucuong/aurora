@@ -2,11 +2,8 @@ body {
   background: lightgrey;
 }
 
-header.site-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 2rem;
+/* header style for animation */
+header .main-header-bar {
   color: #fff;
 
   background: transparent;
@@ -17,23 +14,27 @@ header.site-header {
   right: 0;
   z-index: 4;
   transition: all 500ms ease 0s;
+  width: 100%;
+}
+header .main-header-bar {
+  background: none;
 }
 
-header.site-header.on-scroll {
+header .main-header-bar.on-scroll {
   background: rgb(255, 255, 255);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-  padding: 0.5% 0px;
 }
 
-header.site-header .ast-site-identity,
-header.site-header .custom-logo-link img {
+header .main-header-bar .ast-site-identity,
+header .main-header-bar .custom-logo-link img {
   transition: all 500ms ease 0s;
 }
 
-header.site-header.on-scroll .ast-site-identity {
+header .main-header-bar.on-scroll .ast-site-identity {
   padding: 10px 0;
 }
 
-header.site-header.on-scroll .custom-logo-link img {
+header .main-header-bar.on-scroll .custom-logo-link img {
   width: 200px;
 }
+/* End of header style for animation */
