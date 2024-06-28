@@ -11,9 +11,9 @@ try {
     // detect srolling using jquery
     $(window).scroll(function () {
       if ($(this).scrollTop() > 100) {
-        $("header").addClass("on-scroll");
+        $(".main-header-bar").addClass("on-scroll");
       } else {
-        $("header").removeClass("on-scroll");
+        $(".main-header-bar").removeClass("on-scroll");
       }
     });
   });
