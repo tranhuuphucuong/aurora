@@ -1,0 +1,39 @@
+body {
+  background: lightgrey;
+}
+
+header.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: #fff;
+
+  background: transparent;
+  border-bottom: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  transition: all 500ms ease 0s;
+}
+
+header.site-header.on-scroll {
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  padding: 0.5% 0px;
+}
+
+header.site-header .ast-site-identity,
+header.site-header .custom-logo-link img {
+  transition: all 500ms ease 0s;
+}
+
+header.site-header.on-scroll .ast-site-identity {
+  padding: 10px 0;
+}
+
+header.site-header.on-scroll .custom-logo-link img {
+  width: 200px;
+}
