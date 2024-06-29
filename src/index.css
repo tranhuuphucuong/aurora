@@ -38,3 +38,29 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   width: 200px;
 }
 /* End of header style for animation */
+
+/* element fly in animation */
+[class*="animate-"].inView {
+  opacity: 1;
+  transform: translate(0);
+}
+
+[class*="animate-"] {
+  transition: all 1s ease;
+}
+
+.animate-right {
+  opacity: 0;
+  transform: translateX(15%);
+}
+
+.animate-left {
+  opacity: 0;
+  transform: translateX(-15%);
+}
+
+.animate-up {
+  opacity: 0;
+  transform: translateY(15%);
+}
+/* End of element fly in animation */
