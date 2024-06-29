@@ -61,7 +61,7 @@ try {
     $window.trigger("scroll");
 
     // add/remove active class on hover
-    $(".js-hover").hover(
+    $('[class*=".js-hover"]').hover(
       function () {
         $(this).addClass("active");
       },
@@ -69,6 +69,13 @@ try {
         $(this).removeClass("active");
       }
     );
+
+    // toggle active class on hover
+    var $boxList = $(".box-item");
+    $boxList.hover(function () {
+      $boxList.removeClass("active");
+      $(this).addClass("active");
+    });
 
     // End
   });
