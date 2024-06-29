@@ -59,6 +59,18 @@ try {
     }
     $window.on("resize scroll", checkForInView);
     $window.trigger("scroll");
+
+    // add/remove active class on hover
+    $(".js-hover").hover(
+      function () {
+        $(this).addClass("active");
+      },
+      function () {
+        $(this).removeClass("active");
+      }
+    );
+
+    // End
   });
 } catch (e) {
   log(e);

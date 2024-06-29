@@ -64,3 +64,41 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   transform: translateY(15%);
 }
 /* End of element fly in animation */
+
+/* 4 boxes animation */
+.group-container {
+  position: relative;
+  background: linear-gradient(
+      -127deg,
+      rgba(64, 8, 143, 0.1) 0%,
+      rgba(53, 190, 173, 0.1) 100%
+    ),
+    #fff;
+}
+
+.group-container .box-list {
+  position: absolute;
+  top: 20%;
+  right: 3%;
+  left: 3%;
+}
+
+.box-item {
+  border: 0 solid #fff;
+  transition: all 0.2s ease;
+}
+.box-item .text-box {
+  display: none;
+}
+.box-item.active,
+.box-item:hover {
+  background-color: #f8fcfc;
+  border-radius: 27px;
+  box-shadow: 8px 8px 35px rgba(59, 191, 173, 0.1019607843);
+  border-width: 5px;
+}
+.box-item.active .text-box,
+.box-item:hover .text-box {
+  display: block;
+}
+/* End of 4 boxes animation */
