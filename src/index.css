@@ -348,21 +348,19 @@ header .main-header-bar.on-scroll .custom-logo-link img {
 }
 
 /* link hover underline */
-.a-decor,
-#mega-menu-primary > .mega-menu-item {
+.a-decor {
   position: relative !important;
   transition: all 0.5s ease;
 }
 
-.mega-menu-item::after {
+.mega-menu-link::after {
   left: 10px;
   right: 10px;
 }
-.mega-menu-item:hover::after {
+.mega-menu-link:hover::after {
   top: 80%;
 }
-.a-decor::after,
-#mega-menu-primary > .mega-menu-item::after {
+.a-decor::after {
   content: "" !important;
   display: block !important;
   position: absolute;
@@ -376,12 +374,10 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   border-bottom: 1px solid #300470;
   height: 2px;
 }
-.a-decor:hover,
-#mega-menu-primary > .mega-menu-item:hover {
+.a-decor:hover {
   color: #300470;
 }
-.a-decor:hover::after,
-#mega-menu-primary > .mega-menu-item:hover:after {
+.a-decor:hover::after {
   opacity: 1;
   visibility: visible;
   top: 100%;
