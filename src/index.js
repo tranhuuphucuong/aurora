@@ -77,6 +77,8 @@ try {
       $(this).addClass("active");
     });
 
+    $("#mega-menu-primary > .mega-menu-item").addClass("a-decor");
+
     // End
   });
 } catch (e) {
