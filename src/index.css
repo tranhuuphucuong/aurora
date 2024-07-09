@@ -1,12 +1,40 @@
-body {
-  background: lightgrey;
+/* Scroll sticky effect for Test Description pages */
+@media (max-width: 767px) {
+  .onScroll {
+    width: 100%;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: auto;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    box-shadow: 0.25vw 0.688vw 2.188vw rgba(59, 191, 173, 0.1019607843);
+    border-bottom: 0.016vw solid rgba(48, 3, 112, 0.2);
+    background-color: white;
+    z-index: 1;
+  }
 }
+
+/* Override existing Mega Menu style for menu titles */
+#mega-menu-primary .mega-block-title {
+  color: var(--e-global-color-primary) !important;
+  font-family: "Montserrat-Medium", Sans-serif !important;
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  letter-spacing: 1.44px !important;
+  word-spacing: 0px !important;
+  border-bottom: 2px solid rgba(107, 105, 105, 0.1) !important;
+}
+
 /* Basic section container */
 .container-margintop {
-  margin-top: 100px;
+  --margin-top: 100px;
   --content-width: 85%;
 }
 
+/* Section container - two columns &amp; three columns */
 @media (min-width: 768px) {
   .container-two-column > div > .elementor-element,
   .container-two-column > .elementor-element {
@@ -46,36 +74,14 @@ ul li::marker {
   height: 3px;
 }
 
+/* Fix mobile overflow horizontal because of the flyin animation initial state translateX(15%) */
+@media (max-width: 768px) {
+  .site-content {
+    overflow: hidden;
+  }
+}
+
 /* button gradient */
-/* .button-gradient svg {
-  fill: currentColor;
-}
-
-.button-gradient a,
-[data-id="button-gradient"] {
-  color: var(--e-global-color-text) !important;
-  background: conic-gradient(from 0turn, white 5%, white 60%, white 100%)
-      padding-box,
-    conic-gradient(
-        from 0turn,
-        #40088f 25%,
-        #35bead 50%,
-        #35bead 65%,
-        #40088f 100%,
-        transparent
-      )
-      border-box;
-  border: solid 1px transparent !important;
-  white-space: nowrap;
-  border-radius: 50px;
-}
-
-.button-gradient a:hover,
-.button-gradient.active a,
-[data-id="button-gradient"]:hover {
-  color: white !important;
-  background: linear-gradient(-153deg, #40088f 0%, #35bead 100%) padding-box;
-} */
 .button-gradient svg {
   fill: currentColor;
 }
@@ -93,14 +99,11 @@ ul li::marker {
   -webkit-mask-composite: xor;
   mask-composite: exclude;
   height: 100%;
-  /* left: 1%;
-  right: 2%;
-  top: -1%; */
 }
 .button-gradient a:hover::after,
 [data-id="button-gradient"]:hover::after {
   -webkit-mask: none;
-  /* z-index: -1; */
+  z-index: -1;
 }
 .button-gradient a,
 [data-id="button-gradient"] {
@@ -108,15 +111,16 @@ ul li::marker {
   color: var(--e-global-color-text) !important;
   white-space: nowrap;
   border-radius: 50px;
-
-  /* padding: 11px 31px; */
+  background: initial !important;
+  z-index: 1;
+  border: none !important;
 }
 
 .button-gradient a:hover,
 .button-gradient.active a,
 [data-id="button-gradient"]:hover {
   color: white !important;
-  background: linear-gradient(-153deg, #40088f 0%, #35bead 100%) padding-box;
+  background: linear-gradient(-153deg, #40088f 0%, #35bead 100%) padding-box !important;
 }
 /* End of button gradient */
 
@@ -192,6 +196,18 @@ header .main-header-bar.on-scroll .ast-site-identity {
 header .main-header-bar.on-scroll .custom-logo-link img {
   width: 200px;
 }
+@media (max-width: 768px) {
+  header .main-header-bar .custom-logo-link img {
+    width: 160px;
+  }
+  header .main-header-bar.on-scroll .custom-logo-link img {
+    width: 160px;
+  }
+  .ast-mobile-header-wrap .ast-primary-header-bar,
+  .ast-primary-header-bar .site-primary-header-wrap {
+    min-height: 60px;
+  }
+}
 /* End of header style for animation */
 
 /* Element fly in animation */
@@ -243,13 +259,26 @@ header .main-header-bar.on-scroll .custom-logo-link img {
     overflow: auto;
     scroll-snap-type: x mandatory;
     gap: 20px;
+    right: 5%;
+    left: 5%;
+    width: 90%;
+    justify-content: space-between;
+    filter: drop-shadow(8px 8px 35px rgba(59, 191, 173, 0.1019607843));
+    border-radius: 27px;
+  }
+  .box-list::-webkit-scrollbar {
+    display: none;
   }
   .group-container .box-item {
     min-width: calc(50% - 10px) !important;
     background-color: #f8fcfc;
-    box-shadow: 8px 8px 35px rgba(59, 191, 173, 0.1019607843);
+    /*box-shadow: 8px 8px 35px rgba(59, 191, 173, 0.1019607843);*/
     border-width: 5px;
     width: 100%;
+    scroll-snap-align: start;
+  }
+  .group-container .box-item .elementor-widget-container {
+    height: auto !important;
   }
   .group-container .box-item .elementor-icon-box-description {
     display: block;
@@ -257,22 +286,36 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   }
 }
 
+@media (max-width: 768px) {
+  .group-container .box-list {
+    flex-wrap: nowrap !important;
+    top: 16%;
+    right: 10%;
+    left: 10%;
+    width: 80%;
+  }
+  .group-container .box-item {
+    min-width: 100% !important;
+  }
+}
+
 .box-item {
   border: 0 solid #fff;
   transition: all 0.2s ease;
+  width: calc(100% - 10px);
+  border-radius: 27px;
 }
 .box-item .elementor-icon-box-description {
   display: none;
-  width: calc(100% - 10px);
   transition: all 0.2s ease;
   transition-delay: 0.4s;
 }
 .box-item.active,
 .box-item:hover {
   background-color: #f8fcfc;
-  border-radius: 27px;
   box-shadow: 8px 8px 35px rgba(59, 191, 173, 0.1019607843);
   border-width: 5px;
+  width: 100%;
 }
 .box-item.active .elementor-icon-box-description,
 .box-item:hover .elementor-icon-box-description {
@@ -292,8 +335,6 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   background-size: 200% 200%;
   box-shadow: 0 10px 32px 0 rgba(0, 40, 120, 0.35);
   transition: all 0.5s ease;
-  /* position: relative;
-  left: 80%; */
   float: right;
   width: 35px;
   height: 35px;
@@ -301,6 +342,7 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   justify-content: center;
   align-items: center;
   border-radius: 100%;
+  margin: 20px 0;
 }
 .button-arrow:hover {
   box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
@@ -310,8 +352,6 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   width: 15px;
   height: 13px;
   transform: rotate(180deg);
-}
-@media (max-width: 1024px) {
 }
 /* End of 4 boxes animation */
 
@@ -325,8 +365,8 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   background-size: cover;
   animation: fadeIn 0.5s ease;
 }
-.bg-hover .elementor-heading-title,
-.bg-hover p {
+.bg-hover:hover .elementor-heading-title,
+.bg-hover:hover p {
   color: white;
 }
 .bg-hover:hover svg path {
@@ -343,9 +383,47 @@ header .main-header-bar.on-scroll .custom-logo-link img {
 }
 /* End of card background animation */
 
+/* hero style */
 .swiper-slide-contents {
   max-width: 714px !important;
 }
+
+/* Remove mega indicator, the arrow next to the mega menu */
+.mega-indicator {
+  display: none !important;
+}
+
+/* Mega menu animation*/
+.mega-sub-menu {
+  transform: translate(0, 50px) !important;
+  transition: all 0.5s ease !important;
+}
+.mega-toggle-on .mega-sub-menu {
+  transform: translate(0, 8px) !important;
+}
+
+.mega-sub-menu .mega-menu-item a {
+  position: relative;
+  display: flex !important;
+  align-items: center;
+}
+.mega-sub-menu .mega-menu-item a:hover {
+  color: #35bead !important;
+}
+.mega-sub-menu .mega-menu-item a:hover::after {
+  transform: translateX(8px);
+  opacity: 1;
+}
+.mega-sub-menu .mega-menu-item a::after {
+  content: "→" !important;
+  display: inline-block !important;
+  color: inherit;
+  position: relative;
+  transform: translateX(0);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+/* End of mega menu animation */
 
 /* link hover underline */
 .a-decor {
@@ -353,12 +431,12 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   transition: all 0.5s ease;
 }
 
-.mega-menu-link::after {
+.mega-menu-link.a-decor::after {
   left: 10px;
   right: 10px;
 }
-.mega-menu-link:hover::after {
-  top: 80%;
+.mega-menu-link.a-decor:hover::after {
+  top: 78%;
 }
 .a-decor::after {
   content: "" !important;

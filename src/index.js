@@ -16,13 +16,30 @@ try {
     log("Document is ready");
     var $window = $(window);
 
-    // header animation
     $window.on("scroll", function () {
-      if ($(this).scrollTop() > 100) {
+      // header animation
+      if (($(this).scrollTop() || 0) > 80) {
         $(".main-header-bar").addClass("on-scroll");
       } else {
         $(".main-header-bar").removeClass("on-scroll");
       }
+
+      var menuContainer = document.getElementById("menu-container");
+
+      // var amountScrolled = menuContainer.clientHeight + 0;
+      //   if ($(window).scrollTop() > amountScrolled) {
+      //       $("#menu-container").addClass("onScroll");
+
+      //       console.log($(window).scrollTop())
+      //       console.log($('main').height())
+
+      //       if ($(window).scrollTop() > $('main').height() - 200) {
+      //           $("#menu-container").removeClass("onScroll");
+      //       }
+
+      //   } else {
+      //       $("#menu-container").removeClass("onScroll");
+      //   }
     });
 
     // in view animation
@@ -40,7 +57,7 @@ try {
         var element_top_position = ($element.offset() || {}).top || 0;
         var element_center_position = element_top_position + element_height / 2;
 
-        if ($window.width() < 1024) {
+        if (($window.width() || 0) < 1024) {
           element_center_position = element_top_position + element_height / 4;
         }
 
@@ -80,6 +97,51 @@ try {
     $("#mega-menu-primary > .mega-menu-item > .mega-menu-link").addClass(
       "a-decor"
     );
+
+    // scroll to top
+    // var $circleSvg = $(
+    //   `<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"></svg>`
+    // );
+    // var $circlePath = $(
+    //   `<path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"></path>`
+    // );
+
+    // var scrollToTopEl = $("#ast-scroll-top");
+    // $circleSvg.append($circlePath);
+
+    // scrollToTopEl.append($circleSvg);
+
+    // var progressPath = $circlePath[0];
+    // var pathLength = progressPath.getTotalLength();
+    // progressPath.style.transition = progressPath.style.WebkitTransition =
+    //   "none";
+    // progressPath.style.strokeDasharray = pathLength + " " + pathLength;
+    // progressPath.style.strokeDashoffset = pathLength;
+    // progressPath.getBoundingClientRect();
+    // progressPath.style.transition = progressPath.style.WebkitTransition =
+    //   "stroke-dashoffset 10ms linear";
+    // var updateProgress = function () {
+    //   var scroll = $(window).scrollTop();
+    //   var height = $(document).height() - $(window).height();
+    //   var progress = pathLength - (scroll * pathLength) / height;
+    //   progressPath.style.strokeDashoffset = progress;
+    // };
+    // updateProgress();
+    // $(window).scroll(updateProgress);
+    // var offset = 50;
+    // var duration = 550;
+    // jQuery(window).on("scroll", function () {
+    //   if (jQuery(this).scrollTop() > offset) {
+    //     jQuery(".progress-wrap").addClass("active-progress");
+    //   } else {
+    //     jQuery(".progress-wrap").removeClass("active-progress");
+    //   }
+    // });
+    // jQuery(".progress-wrap").on("click", function (event) {
+    //   event.preventDefault();
+    //   jQuery("html, body").animate({ scrollTop: 0 }, duration);
+    //   return false;
+    // });
 
     // End
   });
