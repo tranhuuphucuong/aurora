@@ -29,10 +29,6 @@ try {
         $(".main-header-bar").removeClass("on-scroll");
       }
 
-      // var menuContainer = $('#menu-container');
-
-      // var menuTopPossition = menuContainer.offset().top;
-
       // check to add or remove class onScroll
       if (scrollTop > 340) {
         $("#menu-container").addClass("onScroll");
@@ -103,7 +99,7 @@ try {
       changeHash: false,
       scrollSpeed: 500,
       scrollThreshold: 0.5,
-      scrollOffset: 160,
+      scrollOffset: -160,
       filter: "",
       easing: "swing",
       begin: function () {

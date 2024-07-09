@@ -6,9 +6,10 @@
     <title>Document</title>
 
     <link href="./index.css" rel="stylesheet" />
+    <link href="./demo.css" rel="stylesheet" />
   </head>
   <body>
-    <header id="nav" class="on-scroll">
+    <!-- <header id="nav" class="on-scroll">
       <div class="nav__logo">
         <a href="#">Aurora</a>
       </div>
@@ -31,8 +32,75 @@
       <div class="nav__toggle">
         <i class="fas fa-bars"></i>
       </div>
-    </header>
+    </header> -->
+    <ul id="nav">
+      <li class="current"><a href="#section-1">Section 1</a></li>
+      <li class=""><a href="#section-2">Section 2</a></li>
+      <li class=""><a href="#section-3">Section 3</a></li>
+    </ul>
+    <div id="container">
+      <div class="section-wrapper" id="section-1">
+        <div class="section">
+          <h1>Horizontal Nav</h1>
+          <p>
+            To account for the offset of the horizontal nav, add top negative
+            margin and top padding. For example, the navigation on this page is
+            50px tall. So to each section, add a -50px top margin and 50px to
+            offset the height of the nav. That means when you go to each
+            section, it will scroll to the exact top of the section while
+            accounting for the height of the nav.
+          </p>
+        </div>
+      </div>
 
+      <div class="section-wrapper" id="section-2">
+        <div class="section">
+          <h2>Section 2</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-wrapper" id="section-3">
+        <div class="section">
+          <h2>Section 3</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+    </div>
     <button class="button-gradient">
       <a href=""> Button</a>
     </button>
@@ -367,8 +435,8 @@
     </svg>
 
     <script
-      src="https://code.jquery.com/jquery-3.7.1.slim.js"
-      integrity="sha256-UgvvN8vBkgO0luPSUl2s8TIlOSYRoGFAX4jlCIm9Adc="
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
       crossorigin="anonymous"
     ></script>
 
