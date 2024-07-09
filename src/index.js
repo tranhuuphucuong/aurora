@@ -18,7 +18,7 @@ try {
 
     $window.on("scroll", function () {
       // header animation
-      if (($(this).scrollTop() || 0) > 80) {
+      if (($(this).scrollTop() || 0) > 70) {
         $(".main-header-bar").addClass("on-scroll");
       } else {
         $(".main-header-bar").removeClass("on-scroll");
