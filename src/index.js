@@ -279,7 +279,8 @@ function onePageNav($, window, document) {
 
         if ($target.length) {
           topPos = $target.offset().top;
-          self.sections[linkHref] = Math.round(topPos);
+          self.sections[linkHref] =
+            Math.round(topPos) - self.config.scrollOffset;
         }
       });
     },
