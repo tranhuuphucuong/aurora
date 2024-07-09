@@ -34,7 +34,7 @@ try {
       // var menuTopPossition = menuContainer.offset().top;
 
       // check to add or remove class onScroll
-      if (scrollTop > 400) {
+      if (scrollTop > 460) {
         $("#menu-container").addClass("onScroll");
       } else {
         $("#menu-container").removeClass("onScroll");
