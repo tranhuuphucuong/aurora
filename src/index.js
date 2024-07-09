@@ -103,6 +103,7 @@ try {
       changeHash: false,
       scrollSpeed: 500,
       scrollThreshold: 0.5,
+      scrollOffset: 160,
       filter: "",
       easing: "swing",
       begin: function () {
@@ -197,6 +198,7 @@ function onePageNav($, window, document) {
       filter: "",
       scrollSpeed: 750,
       scrollThreshold: 0.5,
+      scrollOffset: 0,
       begin: false,
       end: false,
       scrollChange: false,
@@ -362,7 +364,7 @@ function onePageNav($, window, document) {
 
       $("html, body").animate(
         {
-          scrollTop: offset,
+          scrollTop: offset + this.config.scrollOffset,
         },
         this.config.scrollSpeed,
         this.config.easing,
