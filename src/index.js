@@ -118,6 +118,7 @@ try {
     }, 100);
     console.log($("#elementor-tab-title-7231"));
     onElementInserted("body", "#elementor-tab-title-7231", function (el) {
+      console.log(el);
       if (!el || !el.click) return;
       el.click();
     });
