@@ -115,7 +115,7 @@ try {
 
     setTimeout(() => {
       $("#elementor-tab-title-7231").trigger("click");
-    }, 100);
+    }, 200);
     console.log($("#elementor-tab-title-7231"));
     onElementInserted("body", "#elementor-tab-title-7231", function (el) {
       console.log(el);
