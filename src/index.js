@@ -113,6 +113,12 @@ try {
       },
     });
 
+    $("#elementor-tab-title-7231").trigger("click");
+    onElementInserted("body", "#elementor-tab-title-7231", function (el) {
+      if (!el || !el.click) return;
+      el.click();
+    });
+
     // scroll to top
     // var $circleSvg = $(
     //   `<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"></svg>`
@@ -408,9 +414,3 @@ function onElementInserted(containerSelector, elementSelector, callback) {
   var observer = new MutationObserver(onMutationsObserved);
   observer.observe(target, config);
 }
-(function () {
-  onElementInserted("body", "#elementor-tab-title-7231", function (el) {
-    if (!el || !el.click) return;
-    el.click();
-  });
-})();
