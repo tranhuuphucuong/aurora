@@ -113,7 +113,9 @@ try {
       },
     });
 
-    $("#elementor-tab-title-7231").trigger("click");
+    setTimeout(() => {
+      $("#elementor-tab-title-7231").trigger("click");
+    });
     console.log($("#elementor-tab-title-7231"));
     onElementInserted("body", "#elementor-tab-title-7231", function (el) {
       if (!el || !el.click) return;
