@@ -408,8 +408,9 @@ function onElementInserted(containerSelector, elementSelector, callback) {
   var observer = new MutationObserver(onMutationsObserved);
   observer.observe(target, config);
 }
-
-onElementInserted("body", "#elementor-tab-title-7231", function (el) {
-  if (!el || !el.click) return;
-  el.click();
-});
+(function () {
+  onElementInserted("body", "#elementor-tab-title-7231", function (el) {
+    if (!el || !el.click) return;
+    el.click();
+  });
+})();
