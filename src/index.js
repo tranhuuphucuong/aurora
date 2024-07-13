@@ -113,7 +113,9 @@ try {
       },
     });
 
-    $("#elementor-tab-title-7231").trigger("click");
+    onElementInserted("body", "#elementor-tab-title-7231", function (el) {
+      $(el).trigger("click");
+    });
 
     // scroll to top
     // var $circleSvg = $(
@@ -384,4 +386,29 @@ function onePageNav($, window, document) {
       new OnePageNav(this, options).init();
     });
   };
+}
+
+function onElementInserted(containerSelector, elementSelector, callback) {
+  var onMutationsObserved = function (mutations) {
+    mutations.forEach(function (mutation) {
+      if (mutation.addedNodes && mutation.addedNodes.length) {
+        [].map.call(mutation.addedNodes, function (el) {
+          if (!el || !el.querySelector) return;
+
+          var elements = el.querySelectorAll(elementSelector);
+
+          for (var i = 0, len = elements.length; i < len; i++) {
+            callback(elements[i]);
+          }
+        });
+      }
+    });
+  };
+
+  var target = document.querySelector(containerSelector);
+  var config = { childList: true, subtree: true };
+  var MutationObserver =
+    window.MutationObserver || window.WebKitMutationObserver;
+  var observer = new MutationObserver(onMutationsObserved);
+  observer.observe(target, config);
 }
