@@ -400,7 +400,7 @@ a:hover {
   color: rgb(53, 190, 173);
 }
 
-.snap-content#2,
-.snap-content#3 {
+#item2,
+#item3 {
   display: none;
 }
