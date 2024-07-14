@@ -123,7 +123,8 @@ try {
       el.click();
     });
 
-    $(".button-tab").click(function () {
+    $(".button-tab").click(function (e) {
+      e.preventDefault();
       if ($(this).hasClass("active") == false) {
         $(".button-tab").removeClass("active");
         $(this).addClass("active");
