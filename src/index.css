@@ -399,3 +399,8 @@ a {
 a:hover {
   color: rgb(53, 190, 173);
 }
+
+#2.snap-content,
+#3.snap-content {
+  display: none;
+}
