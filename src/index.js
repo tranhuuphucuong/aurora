@@ -123,6 +123,18 @@ try {
       el.click();
     });
 
+    $(".button-tab").click(function () {
+      if ($(this).hasClass("active") == false) {
+        $(".button-tab").removeClass("active");
+        $(this).addClass("active");
+
+        var id = $(this).attr("data-hash");
+
+        $(".snap-content").hide();
+        $(id).show();
+      }
+    });
+
     // scroll to top
     // var $circleSvg = $(
     //   `<svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102"></svg>`
