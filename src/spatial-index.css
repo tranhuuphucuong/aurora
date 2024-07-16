@@ -2,8 +2,8 @@
 header .main-header-bar {
   color: #fff;
 
-  background: transparent;
-  border-bottom: none;
+  background: #151425;
+  border-bottom: 1px solid #e6e6e6;
   position: fixed;
   top: 0;
   left: 0;
@@ -12,26 +12,11 @@ header .main-header-bar {
   transition: all 500ms ease 0s;
   width: 100%;
 }
-header .main-header-bar {
-  background: none;
-}
 
-header .main-header-bar.on-scroll {
-  background: rgb(255, 255, 255);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-header .main-header-bar .ast-site-identity,
-header .main-header-bar .custom-logo-link img {
-  transition: all 500ms ease 0s;
-}
-
-header .main-header-bar.on-scroll .ast-site-identity {
-  padding: 10px 0;
-}
-
-header .main-header-bar.on-scroll .custom-logo-link img {
-  width: 200px;
+.ast-mobile-header-wrap .ast-primary-header-bar,
+.ast-primary-header-bar .site-primary-header-wrap {
+  min-height: auto;
+  height: 64px;
 }
 @media (max-width: 768px) {
   header .main-header-bar .custom-logo-link img {

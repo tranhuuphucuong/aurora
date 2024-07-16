@@ -20,22 +20,22 @@ try {
     log("Document is ready");
     var $window = $(window);
 
-    $window.on("scroll", function () {
-      const scrollTop = $window.scrollTop() || 0;
-      // header animation
-      if ((scrollTop || 0) > 70) {
-        $(".main-header-bar").addClass("on-scroll");
-      } else {
-        $(".main-header-bar").removeClass("on-scroll");
-      }
+    // $window.on("scroll", function () {
+    //   const scrollTop = $window.scrollTop() || 0;
+    //   // header animation
+    //   if ((scrollTop || 0) > 70) {
+    //     $(".main-header-bar").addClass("on-scroll");
+    //   } else {
+    //     $(".main-header-bar").removeClass("on-scroll");
+    //   }
 
-      // check to add or remove class onScroll
-      if (scrollTop > 340) {
-        $("#menu-container").addClass("onScroll");
-      } else {
-        $("#menu-container").removeClass("onScroll");
-      }
-    });
+    //   // check to add or remove class onScroll
+    //   if (scrollTop > 340) {
+    //     $("#menu-container").addClass("onScroll");
+    //   } else {
+    //     $("#menu-container").removeClass("onScroll");
+    //   }
+    // });
 
     // in view animation
     function checkForInView() {
