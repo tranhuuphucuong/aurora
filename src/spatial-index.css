@@ -1,9 +1,6 @@
 /* Header style for animation */
 header .main-header-bar {
-  color: #fff;
-
   background: #151425;
-  border-bottom: 1px solid #e6e6e6;
   position: fixed;
   top: 0;
   left: 0;
@@ -11,6 +8,10 @@ header .main-header-bar {
   z-index: 4;
   transition: all 500ms ease 0s;
   width: 100%;
+}
+
+header .ast-builder-menu-1 .menu-item > .menu-link {
+  color: white;
 }
 
 .ast-mobile-header-wrap .ast-primary-header-bar,
