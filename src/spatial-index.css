@@ -1,6 +1,7 @@
 /* Header style for animation */
 header .main-header-bar {
   background: #151425;
+  border-bottom: none;
   position: fixed;
   top: 0;
   left: 0;
