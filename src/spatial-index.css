@@ -11,6 +11,13 @@ header .main-header-bar {
   width: 100%;
 }
 
+header .site-title a,
+.site-title a:focus,
+.site-title a:hover,
+.site-title a:visited {
+  color: white;
+}
+
 header .ast-builder-menu-1 .menu-item > .menu-link {
   color: white;
 }
