@@ -77,7 +77,6 @@
 .simple-list ul li {
   display: list-item !important;
   list-style-type: disc;
-  margin-left: 1.5rem !important;
 }
 /* End of card hover overlay */
 
