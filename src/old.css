@@ -20,11 +20,13 @@
   mask-composite: exclude;
   height: 100%;
 }
+
 .button-gradient a:hover::after,
 [data-id="button-gradient"]:hover::after {
   -webkit-mask: none;
   z-index: -1;
 }
+
 .button-gradient a,
 [data-id="button-gradient"] {
   position: relative !important;
@@ -42,6 +44,7 @@
   color: white !important;
   background: linear-gradient(-153deg, #40088f 0%, #35bead 100%) padding-box !important;
 }
+
 /* End of button gradient */
 
 /* card hover overlay */
@@ -77,12 +80,9 @@
 .simple-list ul li {
   display: list-item !important;
   list-style-type: disc;
+  margin-left: 1.5rem !important;
 }
 
-.simple-list ul li ul li,
-ul ul {
-  list-style-type: circle;
-}
 /* End of card hover overlay */
 
 /* Header style for animation */
@@ -99,6 +99,7 @@ header .main-header-bar {
   transition: all 500ms ease 0s;
   width: 100%;
 }
+
 header .main-header-bar {
   background: none;
 }
@@ -120,18 +121,22 @@ header .main-header-bar.on-scroll .ast-site-identity {
 header .main-header-bar.on-scroll .custom-logo-link img {
   width: 200px;
 }
+
 @media (max-width: 768px) {
   header .main-header-bar .custom-logo-link img {
     width: 160px;
   }
+
   header .main-header-bar.on-scroll .custom-logo-link img {
     width: 160px;
   }
+
   .ast-mobile-header-wrap .ast-primary-header-bar,
   .ast-primary-header-bar .site-primary-header-wrap {
     min-height: 60px;
   }
 }
+
 /* End of header style for animation */
 
 /* Element fly in animation */
@@ -139,6 +144,7 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   opacity: 1;
   transform: translate(0);
 }
+
 [class*="animate-"] {
   transition: all 1s ease;
 }
@@ -157,6 +163,7 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   opacity: 0;
   transform: translateY(15%);
 }
+
 /* End of element fly in animation */
 
 /* 4 boxes animation */
@@ -190,9 +197,11 @@ header .main-header-bar.on-scroll .custom-logo-link img {
     filter: drop-shadow(8px 8px 35px rgba(59, 191, 173, 0.1019607843));
     border-radius: 27px;
   }
+
   .box-list::-webkit-scrollbar {
     display: none;
   }
+
   .group-container .box-item {
     min-width: calc(50% - 10px) !important;
     background-color: #f8fcfc;
@@ -201,9 +210,11 @@ header .main-header-bar.on-scroll .custom-logo-link img {
     width: 100%;
     scroll-snap-align: start;
   }
+
   .group-container .box-item .elementor-widget-container {
     height: auto !important;
   }
+
   .group-container .box-item .elementor-icon-box-description {
     display: block;
     width: 100%;
@@ -218,6 +229,7 @@ header .main-header-bar.on-scroll .custom-logo-link img {
     left: 10%;
     width: 80%;
   }
+
   .group-container .box-item {
     min-width: 100% !important;
   }
@@ -229,11 +241,13 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   width: calc(100% - 10px);
   border-radius: 27px;
 }
+
 .box-item .elementor-icon-box-description {
   display: none;
   transition: all 0.2s ease;
   transition-delay: 0.4s;
 }
+
 .box-item.active,
 .box-item:hover {
   background-color: #f8fcfc;
@@ -241,6 +255,7 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   border-width: 5px;
   width: 100%;
 }
+
 .box-item.active .elementor-icon-box-description,
 .box-item:hover .elementor-icon-box-description {
   display: block;
@@ -268,15 +283,18 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   border-radius: 100%;
   margin: 20px 0;
 }
+
 .button-arrow:hover {
   box-shadow: 0 0 0 0 rgba(0, 40, 120, 0);
   background-position: 0 0;
 }
+
 .button-arrow img {
   width: 15px;
   height: 13px;
   transform: rotate(180deg);
 }
+
 /* End of 4 boxes animation */
 
 /* card background animation */
@@ -284,15 +302,18 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   background-position: center;
   background-size: cover;
 }
+
 .bg-hover:hover {
   background-position: center;
   background-size: cover;
   animation: fadeIn 0.5s ease;
 }
+
 .bg-hover:hover .elementor-heading-title,
 .bg-hover:hover p {
   color: white;
 }
+
 .bg-hover:hover svg path {
   fill: white !important;
 }
@@ -301,10 +322,12 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 /* End of card background animation */
 
 /* hero style */
@@ -322,6 +345,7 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   transform: translate(0, 50px) !important;
   transition: all 0.5s ease !important;
 }
+
 .mega-toggle-on .mega-sub-menu {
   transform: translate(0, 8px) !important;
 }
@@ -331,13 +355,16 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   display: flex !important;
   align-items: center;
 }
+
 .mega-sub-menu .mega-menu-item a:hover {
   color: #35bead !important;
 }
+
 .mega-sub-menu .mega-menu-item a:hover::after {
   transform: translateX(8px);
   opacity: 1;
 }
+
 .mega-sub-menu .mega-menu-item a::after {
   content: "→" !important;
   display: inline-block !important;
@@ -347,6 +374,7 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   opacity: 0;
   transition: all 0.3s ease;
 }
+
 /* End of mega menu animation */
 
 /* link hover underline */
@@ -359,9 +387,11 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   left: 10px;
   right: 10px;
 }
+
 .mega-menu-link.a-decor:hover::after {
   top: 78%;
 }
+
 .a-decor::after {
   content: "" !important;
   display: block !important;
@@ -376,14 +406,17 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   border-bottom: 1px solid #300470;
   height: 2px;
 }
+
 .a-decor:hover {
   color: #300470;
 }
+
 .a-decor:hover::after {
   opacity: 1;
   visibility: visible;
   top: 100%;
 }
+
 /* End of link hover underline */
 
 /* floading up animation */
@@ -391,26 +424,9 @@ header .main-header-bar.on-scroll .custom-logo-link img {
   transform: translateY(0) !important;
   transition: all 0.5s ease;
 }
+
 .float-up:hover {
   transform: translateY(-10px) !important;
 }
+
 /* End of floating up animation */
-
-a {
-  color: rgb(53, 190, 173);
-  text-decoration: none !important;
-}
-a:hover {
-  color: rgb(53, 190, 173);
-}
-
-/* About us button tab */
-#item2,
-#item3 {
-  display: none;
-}
-
-/* color for icons */
-#_x33_0 .st0 {
-  display: inline;
-}
