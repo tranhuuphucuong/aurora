@@ -78,6 +78,9 @@
   display: list-item !important;
   list-style-type: disc;
 }
+ul ul {
+  list-style-type: circle;
+}
 /* End of card hover overlay */
 
 /* Header style for animation */
