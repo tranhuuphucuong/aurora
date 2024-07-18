@@ -1,3 +1,26 @@
+/* wp topbar hack */
+#wpadminbar ul#wp-admin-bar-root-default > li {
+  z-index: 1000;
+  position: initial;
+}
+#wpadminbar .ab-top-menu > .menupop > .ab-sub-wrapper {
+  z-index: 1001;
+  background: #2c3338;
+  min-width: auto;
+  bottom: 100%;
+}
+html #wpadminbar {
+  width: 449px;
+  min-width: auto;
+  height: auto;
+  left: 20px;
+  bottom: 20px;
+  top: auto;
+  border-radius: 12px;
+  padding: 6px;
+}
+/* End of wp topbar hack */
+
 /* Header style for animation */
 header .main-header-bar {
   background: #151425;
@@ -27,6 +50,15 @@ header .ast-builder-menu-1 .menu-item > .menu-link {
   min-height: auto;
   height: 64px;
 }
+
+header .main-header-menu .sub-menu {
+  background: #151425;
+  color: white;
+  border: none;
+}
+.ast-desktop .ast-primary-header-bar .main-header-menu > .menu-item {
+  line-height: 64px;
+}
 @media (max-width: 768px) {
   header .main-header-bar .custom-logo-link img {
     width: 160px;
@@ -41,24 +73,18 @@ header .ast-builder-menu-1 .menu-item > .menu-link {
 }
 /* End of header style for animation */
 
-/* wp hack */
-#wpadminbar ul#wp-admin-bar-root-default > li {
-  z-index: 1000;
-  position: initial;
+/*Button gradient*/
+.button-primary {
+  font-size: 15px;
+  color: #31006f;
+  padding: 8px 33px 8px 33px;
+  border-radius: 10px;
+  background: transparent;
+  border: 1px solid #31006f;
 }
-#wpadminbar .ab-top-menu > .menupop > .ab-sub-wrapper {
-  z-index: 1001;
-  background: #2c3338;
-  min-width: auto;
-  bottom: 100%;
-}
-html #wpadminbar {
-  width: 449px;
-  min-width: auto;
-  height: auto;
-  left: 20px;
-  bottom: 20px;
-  top: auto;
-  border-radius: 12px;
-  padding: 6px;
+.button-primary:hover {
+  background: transparent linear-gradient(90deg, #655dc6 0%, #66c9ba 100%) 0% 0%
+    no-repeat padding-box !important;
+  border-color: transparent;
+  color: white;
 }
