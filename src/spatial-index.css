@@ -75,16 +75,16 @@ header .main-header-menu .sub-menu {
 
 /*Button gradient*/
 .button-primary {
-  font-size: 15px;
-  color: #31006f;
-  padding: 8px 33px 8px 33px;
+  font-size: 15px !important;
+  color: #31006f !important;
+  padding: 8px 33px 8px 33px !important;
   border-radius: 10px;
-  background: transparent;
-  border: 1px solid #31006f;
+  background: transparent !important;
+  border: 1px solid #31006f !important;
 }
 .button-primary:hover {
   background: transparent linear-gradient(90deg, #655dc6 0%, #66c9ba 100%) 0% 0%
     no-repeat padding-box !important;
-  border-color: transparent;
-  color: white;
+  border-color: transparent !important;
+  color: white !important;
 }
