@@ -88,3 +88,12 @@ header .main-header-menu .sub-menu {
   border-color: transparent !important;
   color: white !important;
 }
+
+/* hero slider */
+.elementor-8 .elementor-element.elementor-element-0347495 .swiper-slide {
+  height: auto;
+}
+.elementor-slides .swiper-slide-bg {
+  aspect-ratio: 1921/980;
+  min-height: auto;
+}
