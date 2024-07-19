@@ -428,11 +428,11 @@ svg .st0 {
 #mega-menu-primary #mega-menu-item-3712 {
   background: linear-gradient(45deg, #302d57, #5953a3) !important;
   border-radius: 4px !important;
-  margin-right: 12px;
+  margin-right: 12px !important;
 }
 
 #mega-menu-primary #mega-menu-item-3712 a:hover::after {
-  display: none;
+  display: none !important;
 }
 #mega-menu-primary #mega-menu-item-3712 a {
   color: white !important;
