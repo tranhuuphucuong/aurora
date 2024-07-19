@@ -134,13 +134,13 @@ header .main-header-menu .sub-menu {
     > :nth-child(2)
     > :nth-child(2) {
     position: relative;
-    left: -20px;
+    left: -60px;
   }
   .elementor-573
     .elementor-element.elementor-element-36d8b9d
     > :nth-child(4)
     > :nth-child(2) {
     position: relative;
-    right: -20px;
+    right: -100px;
   }
 }
