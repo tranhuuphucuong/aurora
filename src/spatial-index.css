@@ -92,7 +92,7 @@ header .main-header-menu .sub-menu {
 /* End of header style for animation */
 
 /*Button gradient*/
-.button-primary {
+.button-primary a {
   font-size: 15px !important;
   color: #31006f !important;
   padding: 8px 33px 8px 33px !important;
@@ -100,7 +100,7 @@ header .main-header-menu .sub-menu {
   background: transparent !important;
   border: 1px solid #31006f !important;
 }
-.button-primary:hover {
+.button-primary a:hover {
   background: transparent linear-gradient(90deg, #655dc6 0%, #66c9ba 100%) 0% 0%
     no-repeat padding-box !important;
   border-color: transparent !important;
