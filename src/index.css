@@ -47,6 +47,7 @@
 [data-id="button-gradient-hero"] {
   color: white !important;
   border-radius: 50px;
+  background-color: var(--e-global-color-primary);
 }
 /* End of button gradient */
 
@@ -425,8 +426,12 @@ svg .st0 {
 #mega-menu-primary #mega-menu-item-3712 {
   background: linear-gradient(45deg, #302d57, #5953a3) !important;
   border-radius: 4px !important;
+  margin-right: 12px;
 }
 
+#mega-menu-primary #mega-menu-item-3712 a:hover::after {
+  display: none;
+}
 #mega-menu-primary #mega-menu-item-3712 a {
   color: white !important;
 }
