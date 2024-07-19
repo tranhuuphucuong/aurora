@@ -38,16 +38,18 @@
 
 .button-gradient a:hover,
 .button-gradient.active a,
-[data-id="button-gradient"]:hover,
-[data-id="button-gradient-hero"]:hover {
+[data-id="button-gradient"]:hover {
   color: white !important;
   background: linear-gradient(-153deg, #40088f 0%, #35bead 100%) padding-box !important;
 }
-
+[data-id="button-gradient-hero"]:hover {
+  background-color: #3a6e9e;
+}
 [data-id="button-gradient-hero"] {
   color: white !important;
   border-radius: 50px;
   background-color: var(--e-global-color-primary);
+  border: none;
 }
 /* End of button gradient */
 
