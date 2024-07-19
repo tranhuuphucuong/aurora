@@ -28,7 +28,9 @@ html #wpadminbar {
   }
 }
 /* End of wp topbar hack */
-
+a {
+  --ast-global-color-0: #370b74;
+}
 :root {
   --ast-global-color-1: #ccc8fe;
 }
