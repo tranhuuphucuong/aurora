@@ -43,12 +43,12 @@
   background: linear-gradient(-153deg, #40088f 0%, #35bead 100%) padding-box !important;
 }
 [data-id="button-gradient-hero"]:hover {
-  background-color: #3a6e9e;
+  background-color: #3a6e9e !important;
 }
 [data-id="button-gradient-hero"] {
   color: white !important;
   border-radius: 50px;
-  background-color: var(--e-global-color-primary);
+  background-color: var(--e-global-color-primary) !important;
   border: none;
 }
 /* End of button gradient */
