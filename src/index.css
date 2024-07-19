@@ -38,9 +38,15 @@
 
 .button-gradient a:hover,
 .button-gradient.active a,
-[data-id="button-gradient"]:hover {
+[data-id="button-gradient"]:hover,
+[data-id="button-gradient-hero"]:hover {
   color: white !important;
   background: linear-gradient(-153deg, #40088f 0%, #35bead 100%) padding-box !important;
+}
+
+[data-id="button-gradient-hero"] {
+  color: white !important;
+  border-radius: 50px;
 }
 /* End of button gradient */
 
@@ -413,4 +419,14 @@ a:hover {
 /* color for icons */
 svg .st0 {
   display: inline;
+}
+
+/* Style top navbar menu first element */
+#mega-menu-primary #mega-menu-item-3712 {
+  background: linear-gradient(45deg, #302d57, #5953a3) !important;
+  border-radius: 4px !important;
+}
+
+#mega-menu-primary #mega-menu-item-3712 a {
+  color: white !important;
 }
