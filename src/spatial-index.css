@@ -28,11 +28,11 @@ html #wpadminbar {
   }
 }
 /* End of wp topbar hack */
-a {
-  --ast-global-color-0: #370b74;
-}
 :root {
   --ast-global-color-1: #ccc8fe;
+}
+a {
+  --ast-global-color-0: #370b74;
 }
 
 /* Header style for animation */
@@ -116,4 +116,31 @@ header .main-header-menu .sub-menu {
 .elementor-slides .swiper-slide-bg {
   aspect-ratio: 1921/980;
   min-height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .elementor-573 .elementor-element.elementor-element-36d8b9d > :nth-child(2) {
+    position: relative;
+    top: -60px;
+    right: -20px;
+  }
+  .elementor-573 .elementor-element.elementor-element-36d8b9d > :nth-child(2) {
+    position: relative;
+    top: -60px;
+    right: 20px;
+  }
+  .elementor-573
+    .elementor-element.elementor-element-36d8b9d
+    > :nth-child(2)
+    > :nth-child(2) {
+    position: relative;
+    left: -20px;
+  }
+  .elementor-573
+    .elementor-element.elementor-element-36d8b9d
+    > :nth-child(2)
+    > :nth-child(2) {
+    position: relative;
+    right: -20px;
+  }
 }
