@@ -29,6 +29,10 @@ html #wpadminbar {
 }
 /* End of wp topbar hack */
 
+:root {
+  --ast-global-color-1: #ccc8fe;
+}
+
 /* Header style for animation */
 header .main-header-bar {
   background: #151425;
@@ -77,6 +81,12 @@ header .main-header-menu .sub-menu {
   .ast-mobile-header-wrap .ast-primary-header-bar,
   .ast-primary-header-bar .site-primary-header-wrap {
     min-height: 60px;
+  }
+}
+@media (max-width: 921px) {
+  .ast-builder-menu-mobile .main-navigation .main-header-menu,
+  .ast-builder-menu-mobile .main-navigation .main-header-menu .sub-menu {
+    padding-top: 30px;
   }
 }
 /* End of header style for animation */
