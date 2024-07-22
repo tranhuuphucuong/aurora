@@ -426,9 +426,19 @@ svg .st0 {
 
 /* Style top navbar menu first element */
 #mega-menu-primary #mega-menu-item-3712 {
-  background: linear-gradient(45deg, #302d57, #5953a3) !important;
-  border-radius: 4px !important;
   margin-right: 12px !important;
+  border-radius: 4px !important;
+  background-color: #40088f;
+
+  /* background: linear-gradient(45deg, #302d57, #5953a3) !important;
+  background-image: linear-gradient(
+    45deg,
+    #2eb4a3 0%,
+    #40088f 82%,
+    #40088f 90%
+  );
+  border-radius: 50px !important;
+  padding: 0 16px; */
 }
 
 #mega-menu-primary #mega-menu-item-3712 a:hover::after {

@@ -27,6 +27,7 @@ html #wpadminbar {
     opacity: 0.8;
   }
 }
+
 /* End of wp topbar hack */
 :root {
   --ast-global-color-1: #ccc8fe;
@@ -117,7 +118,9 @@ header .main-header-menu .sub-menu {
   aspect-ratio: 1921/980;
   min-height: auto;
 }
+/* End of hero slider */
 
+/* Different Types Of Stained Tissues position */
 @media screen and (min-width: 768px) {
   .elementor-573 .elementor-element.elementor-element-36d8b9d > :nth-child(2) {
     position: relative;
@@ -144,3 +147,29 @@ header .main-header-menu .sub-menu {
     right: -100px;
   }
 }
+/* End of Different Types Of Stained Tissues position */
+
+/* Element fly in animation */
+[class*="animate-"].inView {
+  opacity: 1;
+  transform: translate(0);
+}
+[class*="animate-"] {
+  transition: all 1s ease;
+}
+
+.animate-right {
+  opacity: 0;
+  transform: translateX(15%);
+}
+
+.animate-left {
+  opacity: 0;
+  transform: translateX(-15%);
+}
+
+.animate-up {
+  opacity: 0;
+  transform: translateY(15%);
+}
+/* End of element fly in animation */
