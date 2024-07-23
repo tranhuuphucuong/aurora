@@ -23,22 +23,22 @@ try {
     // define movement of panels
     var wipeAnimation = new TimelineMax()
       // animate to second panel
-      .to(".elementor-element.elementor-element-9acc6c2", 0.5, {
+      .to(".panel1", 0.5, {
         scale: 1.1,
         opacity: 0,
       })
-      .to("#c2", 0.5, { scale: 1.1, opacity: 1, zIndex: 2 })
-      .to("#c2", 0.5, { opacity: 0 })
+      .to(".panel2", 0.5, { scale: 1.1, opacity: 1, zIndex: 2 })
+      .to(".panel2", 0.5, { opacity: 0 })
 
-      .to("#c3", 0.5, { scale: 1.1, opacity: 1, zIndex: 3 });
+      .to(".panel3", 0.5, { scale: 1.1, opacity: 1, zIndex: 3 });
 
     // create scene to pin and link animation
     new ScrollMagic.Scene({
-      triggerElement: ".elementor-element.elementor-element-d3e0e7d",
+      triggerElement: ".pinContainer",
       triggerHook: 0.1,
       duration: "300%",
     })
-      .setPin(".elementor-element.elementor-element-d3e0e7d")
+      .setPin(".pinContainer")
       .setTween(wipeAnimation)
       .addTo(controller);
 

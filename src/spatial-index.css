@@ -183,7 +183,7 @@ header .main-header-menu .sub-menu {
   height: 90vh;
   overflow: hidden;
 }
-.elementor-element.elementor-element-9acc6c2 > div {
+/* .elementor-element.elementor-element-9acc6c2 > div {
   position: absolute;
   top: 47%;
   right: 25%;
@@ -191,9 +191,10 @@ header .main-header-menu .sub-menu {
   width: 35%;
   padding: 15px 15px;
   background: #ffffffce !important;
-}
-#slideContainer .panel,
-.elementor-element.elementor-element-9acc6c2 {
+} */
+.panel1,
+.panel2,
+.panel3 {
   position: absolute;
   top: 0;
   left: 0;
@@ -202,12 +203,15 @@ header .main-header-menu .sub-menu {
   height: 100%;
   overflow: hidden;
 }
-#c1,
-#c2,
-#c3 {
+.panel1 {
+  opacity: 1;
+  z-index: 1;
+}
+.panel2,
+.panel3 {
   opacity: 0;
 }
-.sld-wrpr1,
+/* .sld-wrpr1,
 .sld-wrpr2,
 .sld-wrpr3 {
   position: relative;
@@ -216,8 +220,8 @@ header .main-header-menu .sub-menu {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-.sld-box1 {
+} */
+.box1 {
   position: absolute;
   top: 47%;
   right: 25%;
@@ -226,7 +230,7 @@ header .main-header-menu .sub-menu {
   padding: 15px 15px;
   background: #ffffffce !important;
 }
-.sld-box2 {
+.box2 {
   position: absolute;
   top: 40%;
   right: 27%;
@@ -235,7 +239,7 @@ header .main-header-menu .sub-menu {
   padding: 15px 15px;
   background: #ffffffce !important;
 }
-.sld-box3 {
+.box3 {
   position: absolute;
   top: 71%;
   left: 47%;
