@@ -26,17 +26,17 @@ try {
       .to(".elementor-element.elementor-element-9acc6c2", 0.5, {
         scale: 1.1,
         opacity: 0,
-      });
-    // .to("#c2", 0.5, { scale: 1.1, opacity: 1, zIndex: 2 })
-    // .to("#c2", 0.5, { opacity: 0 })
+      })
+      .to("#c2", 0.5, { scale: 1.1, opacity: 1, zIndex: 2 })
+      .to("#c2", 0.5, { opacity: 0 })
 
-    // .to("#c3", 0.5, { scale: 1.1, opacity: 1, zIndex: 3 });
+      .to("#c3", 0.5, { scale: 1.1, opacity: 1, zIndex: 3 });
 
     // create scene to pin and link animation
     new ScrollMagic.Scene({
       triggerElement: ".elementor-element.elementor-element-d3e0e7d",
       triggerHook: 0.1,
-      duration: "100%",
+      duration: "300%",
     })
       .setPin(".elementor-element.elementor-element-d3e0e7d")
       .setTween(wipeAnimation)
