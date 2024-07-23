@@ -6,11 +6,33 @@
     <title>Document</title>
 
     <!-- <link href="./index.css" rel="stylesheet" /> -->
-    <link
+    <!-- <link
       href="https://s3.amazonaws.com/aws-static.tranhuuphucuong.com/index.css"
       rel="stylesheet"
+    /> -->
+    <link href="./spatial-index.css" rel="stylesheet" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      href="https://s3.amazonaws.com/aws-static.tranhuuphucuong.com/spatial-index.css"
+      rel="stylesheet"
     />
-    <link href="./demo.css" rel="stylesheet" />
+    <script
+      src="https://s3.amazonaws.com/aws-static.tranhuuphucuong.com/spatial-index.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://scrollmagic.io/assets/js/lib/greensock/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script src="https://scrollmagic.io/scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.js"></script> -->
   </head>
   <body>
     <!-- <header id="nav" class="on-scroll">
@@ -83,6 +105,52 @@
 
       <div class="section-wrapper" id="section-3">
         <div class="section">
+          <h2>Section 4</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+      <div class="section-wrapper" id="section-3">
+        <div class="section">
+          <h2>Section 5</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+      <div class="section-wrapper" id="section-3">
+        <div class="section">
           <h2>Section 3</h2>
           <p>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
@@ -102,6 +170,101 @@
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
             culpa qui officia deserunt mollit anim id est laborum.
           </p>
+        </div>
+      </div>
+
+      <div
+        id="pinContainer"
+        style="
+          position: relative;
+          margin: auto;
+          inset: 0px auto auto 0px;
+          box-sizing: border-box;
+          width: 100%;
+        "
+      >
+        <div id="slideContainer">
+          <section
+            id="c1"
+            class="panel"
+            style="opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0)"
+          >
+            <div class="sld-wrpr1">
+              <div class="sld-box1">
+                <h4 class="sld-head">
+                  <span style="text-decoration: none !important; color: #000000"
+                    ><a
+                      style="color: #000000; text-decoration: none !important"
+                      href="http://52.220.7.143/about-us/"
+                      >About Spatial Genomics</a
+                    ></span
+                  >
+                </h4>
+                <p class="sld-pera">
+                  Spatial Biology is a novel field in molecular biology that
+                  focuses on examining tissues within their 2D or 3D
+                  environment. In the same way that GPS captures location
+                  coordinates within an area to create a map and track you
+                  within it. With advances in technology and computational
+                  analysis, spatial genomics has the potential to revolutionize
+                  our understanding of biology and human health.<span
+                    style="font-size: 1pt; color: #ffffff"
+                    >Spatial LifeStrands</span
+                  >
+                </p>
+              </div>
+            </div>
+          </section>
+          <section
+            id="c2"
+            class="panel"
+            style="
+              z-index: auto;
+              opacity: 0;
+              transform: matrix(1, 0, 0, 1, 0, 0);
+            "
+          >
+            <div class="sld-wrpr2">
+              <div class="sld-box2">
+                <h4 class="sld-head">What can I expect?</h4>
+                <p class="sld-pera">
+                  By utilizing this technology, we can effectively delineate the
+                  spatial structure of a cell and its communication and
+                  interaction with its environment. This is accomplished by
+                  breaking down seemingly homogeneous regions into unique
+                  molecular signatures and pinpointing relevant cell types,
+                  resulting in the production of precise and reliable data that
+                  can be easily visualized.<span
+                    style="font-size: 1pt; color: #ffffff"
+                    >Spatial LifeStrands</span
+                  >
+                </p>
+              </div>
+            </div>
+          </section>
+          <section
+            id="c3"
+            class="panel"
+            style="
+              z-index: auto;
+              opacity: 0;
+              transform: matrix(1, 0, 0, 1, 0, 0);
+            "
+          >
+            <div class="sld-wrpr3">
+              <div class="sld-box3">
+                <h4 class="sld-head">What is it like?</h4>
+                <p class="sld-pera">
+                  Spatial biology provides a view of a tissue sample at a
+                  molecular level, allowing for observations that cannot be
+                  achieved through sequencing or other existing
+                  technologies.<span style="font-size: 1pt; color: #ffffff"
+                    >Spatial LifeStrands</span
+                  >
+                </p>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
@@ -438,17 +601,11 @@
       </g>
     </svg>
 
-    <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js"
-      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
-      crossorigin="anonymous"
-    ></script>
-
     <!-- <script
       src="https://s3.amazonaws.com/aws-static.tranhuuphucuong.com/index.js"
       crossorigin="anonymous"
     ></script> -->
 
-    <script src="./index.js"></script>
+    <script src="./spatial-index.js"></script>
   </body>
 </html>
