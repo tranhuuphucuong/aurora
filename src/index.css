@@ -436,7 +436,7 @@ svg .st0 {
     #2eb4a3 0%,
     #40088f 82%,
     #40088f 90%
-  );
+  ) !important;
   border-radius: 50px !important;
   padding: 0 16px !important;
 }
