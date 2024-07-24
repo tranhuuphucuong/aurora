@@ -150,16 +150,16 @@ header .main-header-menu .sub-menu {
 /* End of Different Types Of Stained Tissues position */
 
 /*Custom CSS*/
-.homepage-section2-subbox {
+.homepage-section2-subbox.elementor-element {
   flex: 0 1 336px;
 }
 
-.homepage-section4-quadgrid > div {
+.homepage-section4-quadgrid > div.elementor-element {
   flex: 0 1 100%;
 }
 
 @media (min-width: 768px) {
-  .homepage-section4-quadgrid > div {
+  .homepage-section4-quadgrid > div.elementor-element {
     flex: 0 1 calc(50% - 10px);
   }
 }
@@ -179,7 +179,7 @@ header .main-header-menu .sub-menu {
   background-size: cover;
 }
 
-.homepage-section6-triplebox > div {
+.homepage-section6-triplebox > div.elementor-element {
   flex: 0 1 300px;
 }
 /*End of Custom CSS*/
