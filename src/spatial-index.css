@@ -164,7 +164,7 @@ header .main-header-menu .sub-menu {
   }
 }
 
-.homepage-section5-triplebox > div {
+.homepage-section5-triplebox > div.elementor-element.e-con {
   aspect-ratio: 1 / 0.69;
   flex: 0 1 350px;
   background-origin: padding-box;
