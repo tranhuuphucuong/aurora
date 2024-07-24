@@ -254,3 +254,17 @@ header .main-header-menu .sub-menu {
   padding: 15px 15px;
   background: #ffffffce !important;
 }
+
+@media (min-width: 768px) {
+  .box1,
+  .box2,
+  .box3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 85%;
+    padding: 15px 15px;
+    background: #ffffffce !important;
+  }
+}
