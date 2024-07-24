@@ -255,7 +255,7 @@ header .main-header-menu .sub-menu {
   background: #ffffffce !important;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .box1,
   .box2,
   .box3 {
