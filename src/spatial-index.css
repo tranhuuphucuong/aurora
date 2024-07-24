@@ -36,7 +36,7 @@ a {
   --ast-global-color-0: #370b74;
 }
 
-/* Header style for animation */
+/* Header style */
 header .main-header-bar {
   background: #151425;
   border-bottom: none;
@@ -91,8 +91,18 @@ header .main-header-menu .sub-menu {
   .ast-builder-menu-mobile .main-navigation .main-header-menu .sub-menu {
     padding-top: 30px;
   }
+  .ast-header-break-point #ast-mobile-header {
+    display: block;
+    position: fixed;
+    top: 35px;
+    border-bottom: 1px solid lightgray;
+    box-shadow: 0px -4px 10px 0px;
+  }
+  .ast-header-break-point .ast-primary-header-bar {
+    border-bottom: none !important;
+  }
 }
-/* End of header style for animation */
+/* End of header style*/
 
 /*Button gradient*/
 .button-primary a {
