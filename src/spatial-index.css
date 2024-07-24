@@ -151,48 +151,36 @@ header .main-header-menu .sub-menu {
 
 /*Custom CSS*/
 .homepage-section2-subbox {
-  selector {
-    flex: 0 1 336px;
-  }
+  flex: 0 1 336px;
 }
 
-.homepage-section4-quadgrid {
-  selector > div {
-    flex: 0 1 100%;
-  }
+.homepage-section4-quadgrid > div {
+  flex: 0 1 100%;
 }
 
 @media (min-width: 768px) {
-  .homepage-section4-quadgrid {
-    selector > div {
-      flex: 0 1 calc(50% - 10px);
-    }
+  .homepage-section4-quadgrid > div {
+    flex: 0 1 calc(50% - 10px);
   }
 }
 
-.homepage-section5-triplebox {
-  selector > div {
-    aspect-ratio: 1 / 0.69;
-    flex: 0 1 350px;
-    background-origin: padding-box;
-    background-position-x: 50%;
-    background-position-y: 100%;
-    background-repeat: repeat;
-    background-size: cover;
-  }
+.homepage-section5-triplebox > div {
+  aspect-ratio: 1 / 0.69;
+  flex: 0 1 350px;
+  background-origin: padding-box;
+  background-position-x: 50%;
+  background-position-y: 100%;
+  background-repeat: repeat;
+  background-size: cover;
 }
 
 .homepage-section6 {
-  selector {
-    background-position: center;
-    background-size: cover;
-  }
+  background-position: center;
+  background-size: cover;
 }
 
-.homepage-section6-triplebox {
-  selector > div {
-    flex: 0 1 300px;
-  }
+.homepage-section6-triplebox > div {
+  flex: 0 1 300px;
 }
 /*End of Custom CSS*/
 
