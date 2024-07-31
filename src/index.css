@@ -141,6 +141,14 @@ header .main-header-bar.on-scroll .custom-logo-link img {
     min-height: 60px;
   }
 }
+.ast-mobile-header-wrap .ast-mobile-header-content {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-bottom: 1px solid lightgray;
+  box-shadow: 0px -4px 10px -2px;
+}
 /* End of header style for animation */
 
 /* Element fly in animation */
