@@ -141,6 +141,10 @@ header .main-header-bar.on-scroll .custom-logo-link img {
     min-height: 60px;
   }
 }
+.ast-mobile-header-wrap .ast-mobile-header-content .ast-menu-toggle {
+  border: none !important;
+  box-shadow: none !important;
+}
 .ast-mobile-header-wrap .ast-mobile-header-content {
   position: fixed;
   left: 0;
