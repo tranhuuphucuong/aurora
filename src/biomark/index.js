@@ -17,6 +17,7 @@ try {
     log("Document is ready");
     var $window = $(window);
 
+    // header animation
     $window.on("scroll", function () {
       const scrollTop = $window.scrollTop() || 0;
       // header animation
@@ -31,6 +32,19 @@ try {
         $("#menu-container").addClass("onScroll");
       } else {
         $("#menu-container").removeClass("onScroll");
+      }
+    });
+
+    $(".tab-toggle").click(function (e) {
+      e.preventDefault();
+      if ($(this).hasClass("active") == false) {
+        $(".tab-toggle").removeClass("active");
+        $(this).addClass("active");
+
+        var id = $(this).attr("data-hash");
+
+        $(".snap-content").hide();
+        $(id).show();
       }
     });
   });
