@@ -1,3 +1,40 @@
+/* Header style */
+header .main-header-bar {
+  /* background: #151425; */
+  /* border-bottom: none; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 4;
+  transition: all 500ms ease 0s;
+  width: 100%;
+  /* background: transparent; */
+}
+
+header .main-header-bar.on-scroll {
+  /* navbar-fixed */
+  background: #054e8b;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.25);
+  transition: transform 3s ease;
+  -webkit-animation: myanimation 3s;
+  animation: myanimation 3s;
+}
+@keyframes myanimation {
+  0% {
+    background-color: transparent;
+    color: transparent;
+  }
+
+  35% {
+    background-color: #054e8b;
+  }
+
+  to {
+    background-color: #054e8b;
+  }
+}
+
 /* wp topbar hack */
 #wpadminbar ul#wp-admin-bar-root-default > li {
   z-index: 1000;
