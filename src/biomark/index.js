@@ -43,8 +43,10 @@ try {
 
         var id = $(this).attr("data-hash");
 
-        $(".tab-content").hide();
-        $(id).show();
+        $(".tab-content").addClass("hidden");
+        if (id) {
+          $(id).removeClass("hidden");
+        }
       }
     });
   });

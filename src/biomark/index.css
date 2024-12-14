@@ -50,8 +50,8 @@ header .main-header-bar.on-scroll {
 .tab-toggle.active {
   opacity: 1;
 }
-.tab-content-2 {
-  display: none;
+.hidden {
+  display: none !important;
 }
 
 /* wp topbar hack */
