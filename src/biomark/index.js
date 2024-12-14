@@ -43,7 +43,7 @@ try {
 
         var id = $(this).attr("data-hash");
 
-        $(".snap-content").hide();
+        $(".tab-content").hide();
         $(id).show();
       }
     });
