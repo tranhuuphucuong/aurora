@@ -42,6 +42,7 @@ header .main-header-bar.on-scroll {
   }
 }
 
+/* Tab toggle */
 .tab-toggle {
   opacity: 0.7;
   cursor: pointer;
@@ -50,6 +51,34 @@ header .main-header-bar.on-scroll {
 .tab-toggle.active {
   opacity: 1;
 }
+/* End of Tab toggle */
+
+/* Accodion */
+.accordion-custom {
+}
+.accordion-custom summary {
+  /*accordion trigger 
+  overwrite border*/
+}
+.accordion-custom summary .e-n-accordion-item-title-icon svg {
+  display: none !important;
+}
+.accordion-custom summary .e-n-accordion-item-title-icon .e-closed::after {
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="36px" height="36px"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>');
+  transform: rotate(180deg);
+}
+.accordion-custom summary .e-n-accordion-item-title-icon .e-opened::after {
+  content: url('data:image/svg+xml; utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="36px" height="36px"><path d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"></path><path d="M0 0h24v24H0V0z" fill="none"></path></svg>');
+}
+.accordion-custom summary .e-n-accordion-item-title-icon {
+  /*accordion open close icon*/
+}
+.accordion-custom
+  summary
+  + div.elementor-element.elementor-element-fb8b221.e-con-full.e-flex.e-con.e-child {
+  /* accordion content */
+}
+
 .hidden {
   display: none !important;
 }
