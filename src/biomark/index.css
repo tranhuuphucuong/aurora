@@ -64,6 +64,9 @@ header .main-header-bar.on-scroll {
   display: none !important;
 }
 .e-n-accordion-item-title-header {
+  font-weight: 700;
+  font-size: 20px;
+  color: #054e8b !important;
   flex: 1;
 }
 .accordion-custom summary .e-n-accordion-item-title-icon {
