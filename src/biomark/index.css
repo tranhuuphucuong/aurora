@@ -79,6 +79,7 @@ header .main-header-bar.on-scroll {
   align-items: center;
   justify-content: center;
   width: 30px;
+  min-width: 30px;
   height: 30px;
 }
 .accordion-custom summary .e-n-accordion-item-title-icon .e-closed::after {
