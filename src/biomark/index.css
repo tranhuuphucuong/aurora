@@ -128,6 +128,12 @@ header .main-header-bar.on-scroll {
 }
 
 .bg-overlay::before {
+  content: "";
+  display: block;
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
   background: linear-gradient(
     89.61deg,
     rgba(0, 0, 0, 0.5) 49.95%,
