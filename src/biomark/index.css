@@ -53,6 +53,7 @@ header .main-header-bar.on-scroll {
     background: #054e8b;
     height: 66px;
     animation-duration: 0s;
+    transition-duration: 0s;
   }
   header .main-header-bar img {
     height: 50px;
