@@ -51,7 +51,7 @@ header .main-header-bar.on-scroll {
   opacity: 1;
 }
 .tab-toggle.tab-button.active,
-.tab-toggle.tab-button.active * {
+.tab-toggle.tab-button.active .elementor-heading-title {
   background-color: #054e8b;
   color: #fff;
 }
