@@ -1,7 +1,7 @@
 /* Header style */
 header .main-header-bar {
   /* background: #151425; */
-  /* border-bottom: none; */
+  border-bottom: none;
   position: fixed;
   top: 0;
   left: 0;
@@ -39,6 +39,21 @@ header .main-header-bar.on-scroll {
 
   to {
     background-color: #054e8b;
+  }
+}
+@media (max-width: 768px) {
+  header + div {
+    padding-top: 66px;
+  }
+  header .main-header-bar {
+    height: 66px;
+  }
+  header .main-header-bar.on-scroll .custom-logo-link img {
+    height: 50px;
+  }
+  .ast-mobile-header-wrap .ast-primary-header-bar,
+  .ast-primary-header-bar .site-primary-header-wrap {
+    min-height: 60px;
   }
 }
 /* End of header style */
