@@ -42,18 +42,18 @@ header .main-header-bar.on-scroll {
   }
 }
 @media (max-width: 768px) {
-  header + div {
+  /* header + div {
     padding-top: 66px;
-  }
+  } */
   header .main-header-bar {
+    background: #054e8b;
     height: 66px;
   }
   header .main-header-bar.on-scroll .custom-logo-link img {
     height: 50px;
   }
-  .ast-mobile-header-wrap .ast-primary-header-bar,
-  .ast-primary-header-bar .site-primary-header-wrap {
-    min-height: 60px;
+  .site-branding.ast-site-identity {
+    padding: 0;
   }
 }
 /* End of header style */
