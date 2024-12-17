@@ -49,7 +49,7 @@ header .main-header-bar.on-scroll {
     background: #054e8b;
     height: 66px;
   }
-  header .main-header-bar.on-scroll .custom-logo-link img {
+  header .main-header-bar img {
     height: 50px;
   }
   .site-branding.ast-site-identity {
