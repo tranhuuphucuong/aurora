@@ -65,9 +65,17 @@ header .main-header-bar.on-scroll {
 }
 .e-n-accordion-item-title-header {
   font-weight: 700;
+  flex: 1;
+
+  border: 1px solid #dae0eb;
+  box-sizing: border-box;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+  padding: 10px 20px !important;
+  background: #fff;
   font-size: 18px !important;
   color: #054e8b !important;
-  flex: 1;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 .accordion-custom summary .e-n-accordion-item-title-icon {
   order: 1;
@@ -92,9 +100,7 @@ header .main-header-bar.on-scroll {
 .accordion-custom summary .e-n-accordion-item-title-icon {
   /*accordion open close icon*/
 }
-.accordion-custom
-  summary
-  + div.elementor-element.elementor-element-fb8b221.e-con-full.e-flex.e-con.e-child {
+.accordion-custom summary + div.elementor-element {
   padding: 10px 32px !important;
   background: #fafafa;
   box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.25);
