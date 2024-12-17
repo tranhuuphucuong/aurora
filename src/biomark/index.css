@@ -127,6 +127,14 @@ header .main-header-bar.on-scroll {
   display: none !important;
 }
 
+.bg-overlay {
+  background: linear-gradient(
+    89.61deg,
+    rgba(0, 0, 0, 0.5) 49.95%,
+    transparent 99.62%
+  );
+}
+
 /* wp topbar hack */
 #wpadminbar ul#wp-admin-bar-root-default > li {
   z-index: 1000;
