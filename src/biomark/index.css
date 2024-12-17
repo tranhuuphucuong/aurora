@@ -18,11 +18,13 @@ header .main-header-bar {
     transparent 94.15%
   );
   padding-top: 0px;
-  display: flex;
+  display: flex !important;
   justify-content: space-between;
   align-items: center;
 }
-
+header .main-header-bar > div {
+  flex: 1;
+}
 .ast-header-break-point .ast-primary-header-bar {
   border-bottom: none;
 }
