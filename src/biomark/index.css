@@ -17,6 +17,7 @@ header .main-header-bar {
     rgba(0, 0, 0, 0.342) 50.34%,
     transparent 94.15%
   );
+  padding-top: 0px;
 }
 
 .ast-header-break-point .ast-primary-header-bar {
@@ -57,6 +58,15 @@ header .main-header-bar.on-scroll {
   }
   header .main-header-bar img {
     height: 50px;
+  }
+
+  header .main-header-bar.on-scroll {
+    /* navbar-fixed */
+    background: #054e8b;
+    box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.25);
+    transition: initial;
+    -webkit-animation: initial;
+    animation: initial;
   }
   .site-branding.ast-site-identity {
     padding: 0;
