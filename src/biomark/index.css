@@ -107,6 +107,12 @@ header .main-header-bar.on-scroll {
 }
 
 @media (max-width: 768px) {
+  .elementor-672 .elementor-element.elementor-element-a2005ee > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+  }
   .elementor-672 .elementor-element.elementor-element-a2005ee {
     flex-wrap: nowrap;
   }
