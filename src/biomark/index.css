@@ -63,19 +63,20 @@ header .main-header-bar.on-scroll {
 .accordion-custom summary .e-n-accordion-item-title-icon svg {
   display: none !important;
 }
-.e-n-accordion-item-title-header {
-  font-weight: 700;
-  flex: 1;
-
+.accordion-custom summary {
   border: 1px solid #dae0eb;
   box-sizing: border-box;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
   padding: 10px 20px !important;
   background: #fff;
-  font-size: 18px !important;
   color: #054e8b !important;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
+}
+.accordion-custom .e-n-accordion-item-title-header {
+  font-weight: 700;
+  flex: 1;
+  font-size: 18px !important;
 }
 .accordion-custom summary .e-n-accordion-item-title-icon {
   order: 1;
