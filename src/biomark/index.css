@@ -50,10 +50,11 @@ header .main-header-bar.on-scroll {
 .tab-toggle.tab-button {
   opacity: 1;
 }
-.tab-toggle.tab-button.active,
+.tab-toggle.tab-button.active {
+  background-color: #054e8b;
+}
 .tab-toggle.tab-button.active .elementor-heading-title {
   transition: all 0.2s ease;
-  background-color: #054e8b;
   color: #fff;
 }
 
