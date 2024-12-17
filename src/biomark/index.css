@@ -46,7 +46,7 @@ header .main-header-bar.on-scroll {
   }
 }
 @media (max-width: 768px) {
-  header + div {
+  header.site-header + div {
     padding-top: 66px;
   }
   header .main-header-bar {
