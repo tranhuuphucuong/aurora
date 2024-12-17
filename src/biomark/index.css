@@ -52,11 +52,12 @@ header .main-header-bar.on-scroll {
   header .main-header-bar {
     background: #054e8b;
     height: 66px;
+    animation-duration: 0s;
   }
   header .main-header-bar img {
     height: 50px;
   }
-  .site-branding.ast-site-identity {
+  .site-branding .ast-site-identity {
     padding: 0;
   }
 }
