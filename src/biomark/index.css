@@ -47,6 +47,13 @@ header .main-header-bar.on-scroll {
   opacity: 0.4;
   cursor: pointer;
 }
+.tab-toggle.tab-toggle-button {
+  opacity: 1;
+}
+.tab-toggle.tab-toggle-button.active {
+  background-color: #054e8b;
+  color: #fff;
+}
 
 .tab-toggle.active {
   opacity: 1;
