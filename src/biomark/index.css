@@ -105,6 +105,15 @@ header .main-header-bar.on-scroll {
 .tab-toggle.active {
   opacity: 1;
 }
+
+@media (max-width: 768px) {
+  .elementor-672 .elementor-element.elementor-element-a2005ee {
+    flex-wrap: nowrap;
+  }
+  .elementor-heading-title {
+    font-size: 16px !important;
+  }
+}
 /* End of Tab toggle */
 
 /* Accodion */
