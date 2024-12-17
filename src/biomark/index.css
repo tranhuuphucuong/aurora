@@ -19,6 +19,10 @@ header .main-header-bar {
   );
 }
 
+.ast-header-break-point .ast-primary-header-bar {
+  border-bottom: none;
+}
+
 header .main-header-bar.on-scroll {
   /* navbar-fixed */
   background: #054e8b;
