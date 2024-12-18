@@ -83,7 +83,7 @@ header .main-header-bar.on-scroll {
     padding-top: 66px;
   }
   header .main-header-bar {
-    background: var(--e-global-color-primary);
+    /* background: var(--e-global-color-primary); */
     height: 66px;
     animation-duration: 0s;
     transition-duration: 0s;
