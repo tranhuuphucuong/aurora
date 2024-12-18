@@ -1,37 +1,7 @@
 /* Header style */
 /* Header style for animation */
 header .main-header-bar {
-  color: #fff;
-  background-color: var(--e-global-color-primary);
-  border-bottom: none;
-  /* position: fixed; TURN BACK ON LATER*/
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 4;
-  transition: all 500ms ease 0s;
-  width: 100%;
-  height: 100px;
-  padding-top: 5px; /* TEMPORARY - NUDGE LAYOUT*/
-}
-
-header.site-header + div {
-  padding-top: 100px;
-}
-
-header .main-header-bar.on-scroll {
-  background: rgb(255, 255, 255);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
-}
-
-/* Add space on mobile for the header dropdown menu */
-.ast-mobile-header-content {
-  padding-top: 80px;
-}
-/* above code need refactor*/
-
-header .main-header-bar {
-  /* background: #151425; */
+  /* background-color: var(--e-global-color-primary); */
   border-bottom: none !important;
   position: fixed;
   top: 0;
@@ -40,6 +10,8 @@ header .main-header-bar {
   z-index: 4;
   transition: all 500ms ease 0s;
   width: 100%;
+  height: 100px;
+
   /* background: transparent;
   box-shadow: none;
   background: linear-gradient(
@@ -56,6 +28,21 @@ header .main-header-bar {
   background: white;
   box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
+
+header.site-header + div {
+  padding-top: 100px;
+}
+
+header .main-header-bar.on-scroll {
+  background: rgb(255, 255, 255);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* Add space on mobile for the header dropdown menu */
+.ast-mobile-header-content {
+  padding-top: 80px;
+}
+
 header .main-header-bar > div {
   flex: 1;
 }
