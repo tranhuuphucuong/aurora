@@ -29,7 +29,7 @@ header .main-header-bar {
   box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
 
-header.site-header > * {
+header.site-header * {
   color: #666 !important;
 }
 header.site-header + div {
