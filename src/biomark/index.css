@@ -13,6 +13,7 @@ header .main-header-bar {
   height: 100px;
 
   /* background: transparent;
+  color: white;
   box-shadow: none;
   background: linear-gradient(
     180deg,
@@ -20,7 +21,6 @@ header .main-header-bar {
     rgba(0, 0, 0, 0.342) 50.34%,
     transparent 94.15%
   ); */
-  padding-top: 0px;
   display: flex !important;
   justify-content: space-between;
   align-items: center;
@@ -29,6 +29,9 @@ header .main-header-bar {
   box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
 
+header.site-header > * {
+  color: #666 !important;
+}
 header.site-header + div {
   padding-top: 100px;
 }
