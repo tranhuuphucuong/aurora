@@ -15,6 +15,10 @@ header .main-header-bar {
   padding-top: 5px; /* TEMPORARY - NUDGE LAYOUT*/
 }
 
+header.site-header + div {
+  padding-top: 100px;
+}
+
 header .main-header-bar.on-scroll {
   background: rgb(255, 255, 255);
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
@@ -36,18 +40,21 @@ header .main-header-bar {
   z-index: 4;
   transition: all 500ms ease 0s;
   width: 100%;
-  background: transparent;
+  /* background: transparent;
   box-shadow: none;
   background: linear-gradient(
     180deg,
     rgba(0, 0, 0, 0.7),
     rgba(0, 0, 0, 0.342) 50.34%,
     transparent 94.15%
-  );
+  ); */
   padding-top: 0px;
   display: flex !important;
   justify-content: space-between;
   align-items: center;
+
+  background: white;
+  box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.25);
 }
 header .main-header-bar > div {
   flex: 1;
@@ -59,9 +66,8 @@ header .main-header-bar > div {
 .ast-primary-header-bar .site-primary-header-wrap {
   flex: 1;
 }
-
+/* 
 header .main-header-bar.on-scroll {
-  /* navbar-fixed */
   background: #054e8b;
   box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.25);
   transition: transform 3s ease;
@@ -81,7 +87,7 @@ header .main-header-bar.on-scroll {
   to {
     background-color: #054e8b;
   }
-}
+} */
 @media (max-width: 768px) {
   header.site-header + div {
     padding-top: 66px;
